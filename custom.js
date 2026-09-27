@@ -1,0 +1,68 @@
+
+const foods = [
+    {
+        id: '01',
+        src: 'Chicken-1.jpg',
+        alt: 'this is alt test',
+        title: 'chicken Burger',
+        price: 12,
+        retting: 4,
+    },
+    {
+        id: '02',
+        src: 'Chicken-2.jpg',
+        alt: 'this is alt test',
+        title: 'Chicken Cheese Pizza',
+        price: 15,
+        retting: 3,
+    },
+    {
+        id: '03',
+        src: 'Chicken-3.jpg',
+        alt: 'this is alt test',
+        title: 'Chicken Fry',
+        price: 32,
+        retting: 3,
+    },
+    {
+        id: '04',
+        src: 'Chicken-4.jpg',
+        alt: 'this is alt test',
+        title: 'Chicken Sandwich',
+        price: 7,
+        retting: 5,
+    },
+    {
+        id: '05',
+        src: 'Fry_Nurge-5.jpg',
+        alt: 'this is alt test',
+        title: 'Fry Nurger',
+        price: 10,
+        retting: 5,
+    },
+    {
+        id: '06',
+        src: 'Chicken-6.jpg',
+        alt: 'this is alt test',
+        title: 'Grill Chicken',
+        price: 3,
+        retting: 5,
+    },
+    {
+        id: '07',
+        src: 'Pasta-7.jpg',
+        alt: 'this is alt test',
+        title: 'Pasta',
+        price: 44,
+        retting: 2,
+    },
+    {
+        id: '08',
+        src: 'Kebab-8.jpg',
+        alt: 'this is alt test',
+        title: 'Seekh Kebab',
+        price: 43,
+        retting: 5,
+    },
+]
+

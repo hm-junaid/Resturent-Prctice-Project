@@ -1,0 +1,444 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resturent</title>
+
+    <link rel="stylesheet" href="/src/assets/css/all.min.css">
+    <link rel="stylesheet" href="/src/assets/css/style.css">
+  </head>
+  <body class="min-h-screen flex flex-col">
+
+    
+    <header class="border-b border-gray-200 bg-white">
+  <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4">
+
+    <!-- Logo -->
+    <a href="#" class="flex items-center">
+      <img
+        src="/src/assets/images/logo.png"
+        alt="Restaurant Logo"
+        class="h-12 w-auto object-contain"
+      />
+    </a>
+
+    <!-- Right Side -->
+    <nav class="flex items-center gap-3">
+
+      <!-- Home -->
+      <a
+        href="#"
+        class="rounded-lg px-4 py-2 text-sm font-semibold text-gray-700 transition hover:bg-[#F0A500] hover:text-white">
+        Home
+      </a>
+
+      <!-- Dashboard -->
+      <a
+        href="http://localhost:5173/dashbord.html"
+        class="rounded-lg px-4 py-2 text-sm font-semibold text-gray-700 transition hover:bg-[#F0A500] hover:text-white" >
+        Dashboard
+      </a>
+
+      <!-- Cart -->
+      <a
+        href="#"
+        class="relative flex h-10 w-10 items-center justify-center rounded-lg bg-[#F0A500] text-white transition hover:bg-[#d99000]">
+        <i class="fa-solid fa-cart-shopping text-lg"></i>
+
+        <!-- Cart Count -->
+        <span
+          class="absolute -right-2 -top-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-black px-1 text-xs font-semibold">2</span>
+      </a>
+
+    </nav>
+
+  </div>
+</header>
+
+
+<main class="flex-1">
+
+<!-- Add Product Form -->
+<section class="min-h-screen bg-gray-50 py-16">
+  <div class="mx-auto max-w-2xl px-4">
+
+    <!-- Form Card -->
+    <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-gray-100 sm:p-8">
+
+      <!-- Heading -->
+      <div class="mb-8">
+        <p class="mb-2 text-sm font-semibold uppercase tracking-[3px] text-[#F0A500]">
+          Product Management
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 sm:text-3xl">
+          Add New Product
+        </h2>
+
+        <p class="mt-2 text-sm text-gray-500">
+          Add a new food item to your restaurant menu.
+        </p>
+      </div>
+
+
+      <!-- Form -->
+      <form>
+
+        <!-- Product Name -->
+        <div class="mb-5">
+          <label
+            for="product_name"
+            class="mb-2 block text-sm font-semibold text-gray-700"
+          >
+            Product Name
+          </label>
+
+          <input
+            type="text"
+            id="product_name"
+            name="product_name"
+            placeholder="Enter product name"
+            class="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition placeholder:text-gray-400 focus:border-[#F0A500] focus:ring-2 focus:ring-[#F0A500]/20"
+          />
+        </div>
+
+
+        <!-- Image Select -->
+        <div class="mb-5">
+          <label
+            for="image"
+            class="mb-2 block text-sm font-semibold text-gray-700"
+          >
+            Product Image
+          </label>
+
+          <select
+            id="image"
+            name="image"
+            class="w-full rounded-lg border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 outline-none transition focus:border-[#F0A500] focus:ring-2 focus:ring-[#F0A500]/20"
+          >
+            <option value="" selected disabled>
+              Select an image
+            </option>
+
+            <option value="Chicken-1.jpg">
+              Chicken Burger
+            </option>
+
+            <option value="Chicken-2.jpg">
+              Chicken Cheese Pizza
+            </option>
+
+            <option value="Chicken-3.jpg">
+              Chicken Fry
+            </option>
+
+            <option value="Chicken-4.jpg">
+              Chicken Sandwich
+            </option>
+
+            <option value="Fry_Nurge-5.jpg">
+              Fry Nurger
+            </option>
+
+            <option value="Chicken-6.jpg">
+              Grill Chicken
+            </option>
+
+            <option value="Pasta-7.jpg">
+              Pasta
+            </option>
+
+            <option value="Kebab-8.jpg">
+              Seekh Kebab
+            </option>
+          </select>
+        </div>
+
+
+        <!-- Price -->
+        <div class="mb-5">
+          <label
+            for="price"
+            class="mb-2 block text-sm font-semibold text-gray-700"
+          >
+            Price
+          </label>
+
+          <div class="relative">
+            <span
+              class="absolute left-4 top-1/2 -translate-y-1/2 font-semibold text-[#F0A500]"
+            >
+              $
+            </span>
+
+            <input
+              type="number"
+              id="price"
+              name="price"
+              placeholder="Enter price"
+              min="0"
+              class="w-full rounded-lg border border-gray-200 py-3 pl-9 pr-4 text-sm outline-none transition placeholder:text-gray-400 focus:border-[#F0A500] focus:ring-2 focus:ring-[#F0A500]/20"
+            />
+          </div>
+        </div>
+
+
+        <!-- Rating -->
+        <div class="mb-7">
+          <label
+            for="ratting"
+            class="mb-2 block text-sm font-semibold text-gray-700"
+          >
+            Rating
+          </label>
+
+          <select
+            id="ratting"
+            name="ratting"
+            class="w-full rounded-lg border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 outline-none transition focus:border-[#F0A500] focus:ring-2 focus:ring-[#F0A500]/20"
+          >
+            <option value="" selected disabled>
+              Select rating
+            </option>
+
+            <option value="1">
+              ★
+            </option>
+
+            <option value="2">
+              ★★
+            </option>
+
+            <option value="3">
+              ★★★
+            </option>
+
+            <option value="4">
+              ★★★★
+            </option>
+
+            <option value="5">
+              ★★★★★
+            </option>
+          </select>
+        </div>
+
+
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          class="flex w-full items-center justify-center gap-2 rounded-lg bg-[#F0A500] py-3 font-semibold text-white transition hover:bg-[#d99000]"
+        >
+          <i class="fa-solid fa-plus"></i>
+          Add Product
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer Section -->
+<footer class="bg-[#181818] text-white">
+
+  <div class="mx-auto max-w-7xl px-4 py-14">
+
+    <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
+      <!-- Restaurant Info -->
+      <div>
+        <img
+          src="/src/assets/images/logo.png"
+          alt="Restaurant Logo"
+          class="mb-5 h-12 w-auto object-contain"
+        />
+
+        <p class="max-w-xs text-sm leading-6 text-gray-400">
+          Delicious food made with fresh ingredients and served
+          with love. Enjoy your favorite meals anytime, anywhere.
+        </p>
+
+        <!-- Social Icons -->
+        <div class="mt-5 flex items-center gap-3">
+
+          <a
+            href="#"
+            class="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-gray-300 transition hover:bg-[#F0A500] hover:text-white"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a
+            href="#"
+            class="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-gray-300 transition hover:bg-[#F0A500] hover:text-white"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a
+            href="#"
+            class="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-gray-300 transition hover:bg-[#F0A500] hover:text-white"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+
+        </div>
+      </div>
+
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="mb-5 text-lg font-semibold">
+          Quick Links
+        </h3>
+
+        <ul class="space-y-3 text-sm text-gray-400">
+
+          <li>
+            <a
+              href="#"
+              class="transition hover:text-[#F0A500]"
+            >
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#products"
+              class="transition hover:text-[#F0A500]"
+            >
+              Our Menu
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="transition hover:text-[#F0A500]"
+            >
+              Dashboard
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="transition hover:text-[#F0A500]"
+            >
+              Cart
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+
+      <!-- Contact -->
+      <div>
+        <h3 class="mb-5 text-lg font-semibold">
+          Contact Us
+        </h3>
+
+        <ul class="space-y-4 text-sm text-gray-400">
+
+          <li class="flex items-start gap-3">
+            <i class="fa-solid fa-location-dot mt-1 text-[#F0A500]"></i>
+
+            <span>
+              123 Food Street,<br />
+              Dhaka, Bangladesh
+            </span>
+          </li>
+
+          <li class="flex items-center gap-3">
+            <i class="fa-solid fa-phone text-[#F0A500]"></i>
+
+            <span>
+              +880 1234-567890
+            </span>
+          </li>
+
+          <li class="flex items-center gap-3">
+            <i class="fa-solid fa-envelope text-[#F0A500]"></i>
+
+            <span>
+              info@restaurant.com
+            </span>
+          </li>
+
+        </ul>
+      </div>
+
+
+      <!-- Opening Hours -->
+      <div>
+        <h3 class="mb-5 text-lg font-semibold">
+          Opening Hours
+        </h3>
+
+        <div class="space-y-3 text-sm">
+
+          <div class="flex items-center justify-between border-b border-white/10 pb-3">
+            <span class="text-gray-400">
+              Monday - Friday
+            </span>
+
+            <span class="text-[#F0A500]">
+              10:00 AM - 10:00 PM
+            </span>
+          </div>
+
+          <div class="flex items-center justify-between border-b border-white/10 pb-3">
+            <span class="text-gray-400">
+              Saturday
+            </span>
+
+            <span class="text-[#F0A500]">
+              11:00 AM - 11:00 PM
+            </span>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <span class="text-gray-400">
+              Sunday
+            </span>
+
+            <span class="text-[#F0A500]">
+              12:00 PM - 10:00 PM
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Bottom Footer -->
+    <div class="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-sm text-gray-500 sm:flex-row">
+
+      <p>
+        © 2026 Restaurant. All rights reserved.
+      </p>
+
+      <p>
+        Made by <strong>HM Junaid</strong>
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
